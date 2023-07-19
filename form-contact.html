@@ -1,13 +1,117 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Establecimiento educativo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div class="contact">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Unt ref School</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#footer">Ir al pie de pagina</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <center>
+      <h1>Formulario de contacto</h1>
+    </center>
+    <form target="_blank" action="https://formsubmit.co/maiexample@example.com" method="POST">
+      <div class="">
+        <div class="">
+          <div class="col">
+            <input type="text" name="name" class="form-control field-form" placeholder="Nombre completo" required>
+            <br>
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="form-control field-form" placeholder="Correo electronico" required>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Escriba aqui su consulta" class="form-control field-form" name="message" rows="10"
+          required></textarea>
+        <br>
+      </div>
+      <center><button type="submit" class="btn btn-lg btn-dark btn-block">Enviar consulta</button></center>
+    </form>
+  </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer text-center" id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <hr />
+          <h4 class="text-uppercase mb-4">REDES SOCIALES</h4>
+          <hr />
+          <ul class="">
+            <li class="">
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook">facebook</i>
+              </a>
+            </li>
+            <br />
+            <li>
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram">instagram</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <hr />
+          <h4 class="text-uppercase mb-4">UBICACION</h4>
+          <hr />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.855551143892!2d-65.29856778513414!3d-26.812727683170774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d76c0bc729%3A0xfc87d5a2cca29e10!2sAv.%20Aconquija%2C%20T4107CES%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1sen!2sar!4v1589677805558!5m2!1sen!2sar"></iframe>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4 letras">
+          <hr />
+          <h4 class="text-uppercase mb-4">CONTACTANOS</h4>
+          <hr />
+          <p><a href="https://wa.me/1234567890">Por WhatsApp</a></p>
+          <p>O por telefono de linea a:</p>
+          <p></p>
+          <p><a href="tel:+541234567890">+54 1234 567890</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <center>
+    <a href="#Top" class="btn btn-primary btn-lg">Subir</a>
+  </center>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

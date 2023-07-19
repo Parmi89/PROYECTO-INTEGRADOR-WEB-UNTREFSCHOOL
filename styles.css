@@ -1,0 +1,60 @@
+.presentation-image {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+.quienessomos{
+    display: flex;
+    background-color: #1F8A70;
+}
+.column {
+        flex: 1;
+        padding: 20px;
+}
+.porqueelegirnos{
+    background-color: #1F8A70;
+}
+.propeduc{
+    background-image: url(images/PropEduc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.ultimasnotic{
+    background-color: #EFF5F5;
+}
+.contact {
+    background-image: url(images/contact1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+ul {
+    list-style: none;
+}
+#scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#scrollBtn span {
+    display: block;
+    transform: rotate(-90deg);
+}
+
+#scrollBtn.visible {
+    opacity: 1;
+}
