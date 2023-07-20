@@ -1,3 +1,4 @@
+// BOTON SCROLL//
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) { // Cambia 100 por la altura deseada para mostrar el botón
@@ -12,3 +13,17 @@ $(document).ready(function() {
         return false;
     });
 });
+
+// VENTANA MODAL//
+function openModal(image) {
+    var modal = document.getElementById("modal");
+    var modalContent = modal.querySelector(".modal-content");
+
+    modalContent.src = image.src;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
