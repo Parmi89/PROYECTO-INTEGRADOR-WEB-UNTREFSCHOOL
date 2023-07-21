@@ -1,37 +1,62 @@
-/*IMAGEN PRESENTACION */
-.presentation-image {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-}
+/*  PALETA DE COLORES 
+NARANJA #FC7300 ,VERDE #1F8A70, AZUL #00425A , NEGRO #181823,
+GRIS PARA BLANCO    #EFF5F5*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* SECCION QUIENES SOMOS */
-.quienessomos {
-    display: flex;
+.principal {
     background-color: #1F8A70;
 }
 
+/*NAVBAR */
+.navbar {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 15px;
+}
+
+/*IMAGEN PRESENTACION */
+.presentation-image {
+    flex: row;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+/* SECCION QUIENESSOMOS */
+.quienessomos {
+    flex: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .column {
-    flex: 1;
+    flex: row;
     padding: 20px;
 }
 
 /* SECCION POR QUE ELEGIRNOS*/
 .porqueelegirnos {
     background-color: #1F8A70;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+/* SECCION PROPUESTA EDUCATIVA*/
 .propeduc {
-    background-image: url(images/PropEduc.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    flex: 1;
+    height: auto;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* SECCION ULTIMAS NOTICIAS*/
 .ultimasnotic {
     background-color: #EFF5F5;
+    flex: row;
 }
 
 /* SECCION DEL FORMULARIO DE CONTACTO*/
@@ -41,6 +66,38 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 /* SECCION POR QUE ELEGIRNOS*/
@@ -61,6 +118,30 @@
 /* MEJORANDO VISTA DE LAS LISTAS */
 ul {
     list-style: none;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer {
+    background-color: #181823;
+    justify-content: space-between;
+    gap: 1; 
+}
+
+.text-b {
+    color: #EFF5F5;
+}
+
+@media (min-width: 420px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+iframe {
+    max-width: 100%;
+
 }
 
 /* BOTON SCROLL */
@@ -131,3 +212,5 @@ ul {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* FOOTER CONTACT */
