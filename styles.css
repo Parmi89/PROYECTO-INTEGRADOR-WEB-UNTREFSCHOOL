@@ -128,7 +128,9 @@ h1{
     justify-content: space-between;
     gap: 1; 
 }
-
+h3{
+    color: #FC7300 !important;
+}
 .text-b {
     color: #EFF5F5;
 }
